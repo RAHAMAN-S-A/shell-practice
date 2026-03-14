@@ -10,4 +10,3 @@ if(today != sunday){
 }
 else{
 	print("take holiday, enjoy")
-}
