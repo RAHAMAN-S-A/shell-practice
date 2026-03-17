@@ -40,10 +40,10 @@ echo "First Fruit is: ${FRUITS[0]}"
 echo "Second Fruit is: ${FRUITS[1]}"
 echo "Third Fruit is: ${FRUITS[2]}"
 
-number=$1
+read -p "Enter number: " number
 
-if [ "$number"  -gt $20 ]; then
-echo "print false"
+if [ "$number" -gt 20 ]; then
+  echo "print false"
 else
-echo "print true"
+  echo "print true"
 fi
