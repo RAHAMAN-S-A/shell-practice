@@ -50,8 +50,8 @@ fi
 
 user_ID=(id -u)
 
-if[user_id -ne 0] then
+if [ user_id -ne 0 ] then
 
-echo "print as use root user"
+echo " print as use root user "
 
 fi
