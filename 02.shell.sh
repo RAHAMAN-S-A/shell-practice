@@ -42,7 +42,7 @@ echo "Third Fruit is: ${FRUITS[2]}"
 
 number=$1
 
-if [$number is -gt 20];then
+if [ $number is -gt 20 ];then
 echo "print false"
 else
 echo "print true"
