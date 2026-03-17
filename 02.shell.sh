@@ -19,25 +19,7 @@ echo "$PERSON2:: Hi $PERSON1, I am fine thanks for asking. How are you doing?"
 echo "$PERSON1:: doing fine. What are you learning $PERSON2?"
 echo "$PERSON2:: I am learning Shell. What about you?"
 
-echo "Please Enter your username::"
-read USER_NAME
 
-echo "User name is $USER_NAME"
-
-echo "Please enter your password::"
-read -s PASSWORD
-
-echo "Password is $PASSWORD"
-
-echo "Please Enter your username::"
-read USER_NAME
-
-echo "User name is $USER_NAME"
-
-echo "Please enter your password::"
-read -s PASSWORD
-
-echo "Password is $PASSWORD"
 
 
 echo "All args passed to script: $@"
@@ -64,4 +46,4 @@ if [$number is -gt 20];then
 echo "print false"
 else
 echo "print true"
-elif
+fi
