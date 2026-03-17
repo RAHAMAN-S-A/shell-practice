@@ -47,3 +47,11 @@ if [ "$number" -gt 20 ]; then
 else
   echo "print true"
 fi
+
+user_ID=(id -u)
+
+if[user_id -ne 0] then
+
+echo "print as use root user"
+
+fi
