@@ -40,26 +40,21 @@ echo "First Fruit is: ${FRUITS[0]}"
 echo "Second Fruit is: ${FRUITS[1]}"
 echo "Third Fruit is: ${FRUITS[2]}"
 
+USERID=$(id -u)
 
-user_id=$(id -u)
-
-if [ "$user_id" -ne 0 ] ; then
-
- echo "   use root user "
- exit 1
-
+if [ $USERID -ne 0 ]; then
+    echo "Please run this script with root user access"
+    exit 1
 fi
 
-if dnf install mysql -y
+echo "Installing Nginx"
+dnf install nginx -y
 
- echo " installing my sql "
-
+if [ $? -ne 0 ]; then
+    echo "Installing Nginx ... FAILURE"
+    exit 1
 else
-
-
- echo " un success "
-  
-
-fi  
+    echo "Installing Nginx ... SUCCESS"
+fi
 
 
