@@ -40,13 +40,6 @@ echo "First Fruit is: ${FRUITS[0]}"
 echo "Second Fruit is: ${FRUITS[1]}"
 echo "Third Fruit is: ${FRUITS[2]}"
 
-read -p "Enter number: " number
-
-if [ "$number" -gt 20 ]; then
-  echo "print false"
-else
-  echo "print true"
-fi
 
 user_id=$(id -u)
 
@@ -59,9 +52,10 @@ fi
 
 echo "You are root user"
 
-echo "instaling my sql"
+
 
 dnf install mysql -y
+
 
 if [ $?  -ne 0 ] ; then
 
