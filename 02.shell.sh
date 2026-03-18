@@ -52,19 +52,14 @@ fi
 
 echo "You are root user"
 
+if dnf install mysql -y
 
-
-dnf install mysql -y
-
-
-if [ $?  -ne 0 ] ; then
-
-echo " not installing my sql "
-exit 1
+echo " installing my sql "
 
 else
 
-echo " success "
+
+echo " un success "
   
 
 fi  
