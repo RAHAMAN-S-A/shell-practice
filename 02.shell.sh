@@ -63,13 +63,15 @@ echo "instaling my sql"
 
 dnf install mysql -y
 
-if [ $? is -ne 0 ] ; then
+if [ $?  -ne 0 ] ; then
 
 echo " not installing my sql "
 
 else
+
+echo " success "
   exit 1
 
 fi  
 
-insta
+
