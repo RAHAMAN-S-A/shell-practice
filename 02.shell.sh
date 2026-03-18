@@ -68,3 +68,7 @@ VALIDATE(){
 
 dnf install mysql -y
 VALIDATE $? "Installing Mysql"
+
+status="netstat -lntp | grep 80"
+
+echo " $status "
