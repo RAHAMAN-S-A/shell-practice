@@ -45,21 +45,19 @@ user_id=$(id -u)
 
 if [ "$user_id" -ne 0 ] ; then
 
- echo " print as use root user "
+ echo "   use root user "
  exit 1
 
 fi
 
-echo "You are root user"
-
 if dnf install mysql -y
 
-echo " installing my sql "
+ echo " installing my sql "
 
 else
 
 
-echo " un success "
+ echo " un success "
   
 
 fi  
