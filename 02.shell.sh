@@ -57,3 +57,17 @@ if [ "$user_id" -ne 0 ] ; then
 
 fi
 echo "You are root user"
+
+echo "instaling my sql"
+dnf install mysql-y
+
+if [ $? is eq 0 ] ; then
+
+echo " installing my sql "
+
+else
+  exit 1
+
+fi  
+
+insta
