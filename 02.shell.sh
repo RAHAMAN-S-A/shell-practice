@@ -59,7 +59,7 @@ fi
 echo "You are root user"
 
 echo "instaling my sql"
-dnf install mysql-y
+dnf install mysql -y
 
 if [ $? is eq 0 ] ; then
 
