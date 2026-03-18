@@ -66,11 +66,12 @@ dnf install mysql -y
 if [ $?  -ne 0 ] ; then
 
 echo " not installing my sql "
+exit 1
 
 else
 
 echo " success "
-  exit 1
+  
 
 fi  
 
