@@ -65,3 +65,6 @@ VALIDATE(){
         echo "$2 ... SUCCESS"
     fi
 }
+
+dnf install mysql -y
+VALIDATE $? "Installing Mysql"
