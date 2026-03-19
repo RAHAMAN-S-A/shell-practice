@@ -2,7 +2,7 @@
 
 user-id=$(id-u)
 
-if [$user-id ne o]; then
+if [ $user-id ne o ]; then
 
   echo "use sudo or root user"
 
