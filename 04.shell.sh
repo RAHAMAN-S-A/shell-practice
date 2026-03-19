@@ -29,11 +29,12 @@ else
 fi
 
 dnf install mongodp -y
+cp mongo.service
 valadaiate $? " installing mongodp"
 
-dnf install nginix -y
+dnf install ngnix -y
 
 dnf install node.js
 
-systemctl start 
+
 
