@@ -27,4 +27,18 @@ else
   echo " installing " 
 
 fi
+valadaiate (){
+
+
+
+
+}
+dnf install mongodp -y
+valadaiate $? " installing mongodp"
+
+dnf install nginix -y
+
+dnf install node.js
+
+systemctl start 
 
