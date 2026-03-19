@@ -27,12 +27,7 @@ else
   echo " installing " 
 
 fi
-valadaiate (){
 
-
-
-
-}
 dnf install mongodp -y
 valadaiate $? " installing mongodp"
 
