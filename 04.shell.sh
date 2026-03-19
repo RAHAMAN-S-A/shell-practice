@@ -1,6 +1,7 @@
 #!/bin/bash
 
-folder=var/log/shell-practice/
+folder="/var/log/shell-practice/"
+files='$folder/$0.log/"
 
 
 user_id=$(id -u)
