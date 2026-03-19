@@ -3,7 +3,8 @@
 folder_log="/var/log/shell-practice/"
 files="$folder_log/$0.log/"
 
-mkdir
+
+mkdir -p $folder_log
 
 user_id=$(id -u)
 
