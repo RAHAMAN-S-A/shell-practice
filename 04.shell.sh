@@ -1,7 +1,7 @@
 #!/bin/bash
 
 folder_log="/var/log/shell-practice/"
-files="$folder_log/$0.log/"
+files_log="$folder_log/$0.log/"
 
 
 mkdir -p $folder_log
@@ -21,7 +21,7 @@ fi
 
 if [ $? -ne 0 ]; then
 
- echo " not installing"
+ echo " not installing" | tee -a $files_log
  exit 1
 else
   echo " installing " 
