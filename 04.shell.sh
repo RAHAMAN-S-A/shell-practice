@@ -1,7 +1,8 @@
 #!/bin/bash
 
 folder="/var/log/shell-practice/"
-files='$folder/$0.log/"
+files="$folder/$0.log/"
+
 
 
 user_id=$(id -u)
@@ -15,14 +16,14 @@ if [ $user_id -ne 0 ]; then
  
 fi
 
-dnf install mysql -y
+#dnf install mysql -y
 
 if [ $? -ne 0 ]; then
 
  echo " not installing"
  exit 1
 else
-  echo " installing " | tee -a 
+  echo " installing " 
 
 fi
 
