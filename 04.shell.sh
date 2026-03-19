@@ -11,3 +11,15 @@ else
  echo " sudo user "
  
 fi
+
+dnf install mysql -y
+
+if [ $? -ne 0]; then
+
+ echo " installing"
+ exit 1
+else
+  echo "not installing"
+
+fi
+
