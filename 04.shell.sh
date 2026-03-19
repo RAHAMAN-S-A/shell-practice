@@ -1,9 +1,9 @@
 #!/bin/bash
 
-folder="/var/log/shell-practice/"
-files="$folder/$0.log/"
+folder_log="/var/log/shell-practice/"
+files="$folder_log/$0.log/"
 
-
+mkdir
 
 user_id=$(id -u)
 
