@@ -32,7 +32,7 @@ dnf install mongodp-org -y
 
 
 
-dnf install ngnix -y
+dnf install nginx -y
 
 dnf install nodejs -y
 
