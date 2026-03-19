@@ -29,7 +29,7 @@ else
 fi
 
 dnf install mongodp-org -y
-cp https://repo.mongodb.org/yum/redhat/9/mongodb-org/7.0/x86_64/
+
 
 
 dnf install ngnix -y
