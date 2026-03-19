@@ -1,12 +1,14 @@
 #!/bin/bash
 
+folder=var/log/shell-practice/
+
+
 user_id=$(id -u)
 
 if [ $user_id -ne 0 ]; then
 
-  echo " use sudo or root user "
+  echo " use sudo user"
  exit 1
-else
 
  echo " sudo user "
  
@@ -14,12 +16,12 @@ fi
 
 dnf install mysql -y
 
-if [ $? -ne 0]; then
+if [ $? -ne 0 ]; then
 
- echo " installing"
+ echo " not installing"
  exit 1
 else
-  echo "not installing"
+  echo " installing " | tee -a 
 
 fi
 
