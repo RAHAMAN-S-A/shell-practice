@@ -19,8 +19,8 @@ if [ $1 -ne 0 ]; then
  fi
 }
 
-dnf instal nginx -y
+dnf install nginx -y
 validate $? " installing nginx "
 
-dng Instal nodejs -y
+dng Install nodejs -y
 validate $? " installing nodejs "
