@@ -1,6 +1,8 @@
 #1/bin/bash
 
 user_id=$(id -u)
+LOGS_FOLDER="/var/log/shell-practice"
+LOGS_FILES="/var/log/shell-practice/$0.log"
 
 if [ $user_id -ne 0 ]; then
 
@@ -8,6 +10,8 @@ if [ $user_id -ne 0 ]; then
   exit 1
 
  fi 
+
+ mkdir -p $LOGS_FOLDER
 
 validate(){
 
@@ -22,5 +26,7 @@ if [ $1 -ne 0 ]; then
 dnf install nginx -y
 validate $? " installing nginx "
 
-dng Install nodejs -y
+dnf Install nodejs -y
 validate $? " installing nodejs "
+
+
