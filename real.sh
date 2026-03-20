@@ -19,14 +19,34 @@ if [ $1 -ne 0 ]; then
  echo " $2 is failed "
  exit 1
  else
- echo " $2 is success "
+ echo " $2 is installed "
  fi
 }
 
 dnf install nginx -y &>> $LOGS_FILES
 validate $? " installing nginx "
 
-dnf install nodejs -y &>>$LOGS_FILES
+systemctl start nginx &>> $LOGS_FILES
+validate $? " started nginx "
+
+systemctl status nginx &>> $LOGS_FILES
+validate $? " status checking nginx "
+
+
+
+
+
+# dnf install nodejs -y &>>$LOGS_FILES
 validate $? " installing nodejs "
 
+
+
+#for package in $@
+
+do
+dnf install $package
+validate $? " $package  is installing"
+
+
+done
 
