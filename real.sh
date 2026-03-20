@@ -26,7 +26,7 @@ if [ $1 -ne 0 ]; then
 dnf install nginx -y &>> $LOGS_FILES
 validate $? " installing nginx "
 
-dnf install nodejs -y $LOGS_FILES
+dnf install nodejs -y &>>$LOGS_FILES
 validate $? " installing nodejs "
 
 
