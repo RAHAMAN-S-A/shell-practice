@@ -16,6 +16,7 @@ if [ $1 -ne 0 ]; then
  exit 1
  else
  echo " $2 is success "
+ fi
 }
 
 dnf instal nginx -y
