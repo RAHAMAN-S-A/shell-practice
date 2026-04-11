@@ -1,4 +1,4 @@
-#1/bin/bash
+#!/bin/bash
 
 user_id=$(id -u)
 LOGS_FOLDER="/var/log/shell-practice"

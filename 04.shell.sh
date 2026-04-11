@@ -17,6 +17,8 @@ if [ $user_id -ne 0 ]; then
  
 fi
 
+
+
 #dnf install mysql -y
 
 if [ $? -ne 0 ]; then
