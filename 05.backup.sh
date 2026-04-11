@@ -2,7 +2,7 @@
 
 USERID=$(id -u)
 
-if [$USERID ne- o]; then
+if [ $USERID ne- 0 ]; then
  echo "use sudo user"
  exit 1
 fi
